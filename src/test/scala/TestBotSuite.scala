@@ -6,4 +6,8 @@ class TestBotSuite extends AnyFlatSpec{
     val result = answerUser("Bye")
     assert(result == "See you!")
   }
+  "answerUser" should "return correct answer on hello" in {
+    val result = answerUser("Hello")
+    assert(result == "I'm bot, tell me your problem")
+  }
 }
