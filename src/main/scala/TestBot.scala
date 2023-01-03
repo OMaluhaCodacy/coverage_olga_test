@@ -14,6 +14,7 @@ object TestBot {
 
   def addIfTwelve(n : Int): Int = n match {
     case 12 => n + 1
+    case 13 => n + 2
     case _ => n
 
   }
