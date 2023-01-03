@@ -1,6 +1,6 @@
 object TestBot {
 
-  def answerUser(message: String) = message match {
+  def answerUser(message: String): String = message match {
     case "Hello" => "I'm bot, tell me your problem"
     case "call mom" => "please wait, I'm calling"
     case "Bye" => "See you!"
@@ -15,6 +15,7 @@ object TestBot {
   def addIfTwelve(n : Int): Int = n match {
     case 12 => n + 1
     case 13 => n + 2
+    case 14 => n + 3
     case _ => n
 
   }
