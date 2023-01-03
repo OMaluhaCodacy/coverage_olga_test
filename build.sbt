@@ -6,3 +6,12 @@ lazy val root = (project in file("."))
   .settings(
     name := "coverage_olga_test"
   )
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.14" % "test"
+
+jacocoReportSettings := JacocoReportSettings(
+  "Jacoco Coverage Report",
+  None,
+  JacocoThresholds(),
+  Seq(JacocoReportFormats.ScalaHTML, JacocoReportFormats.XML), // note XML formatter
+  "utf-8")
