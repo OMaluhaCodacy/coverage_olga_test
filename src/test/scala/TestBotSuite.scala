@@ -17,7 +17,7 @@ class TestBotSuite extends AnyFlatSpec with Matchers{
     assert(result == "please wait, I'm calling")
   }
   it should "return correct answer to find a cat" in {
-    val result = answerUser("call mom")
+    val result = answerUser("find a cat")
     assert(result == "I'm looking for find a cat")
   }
 
